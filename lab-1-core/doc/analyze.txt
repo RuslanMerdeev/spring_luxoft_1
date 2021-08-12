@@ -10,7 +10,7 @@
 6. Bean "country" is injected to bean "person".
 7. Bean "person" and object "person" are equaled excepting of definition of "a" field of "country" field. Bean "country", injected by reference to bean "person", injects it by name.
 8. Done.
-9. Context retrieved by instantiating of FileSystemXmlApplicationContext class with XML-file name. This file should be located in classpath.
+9. Context retrieved by instantiating of FileSystemXmlApplicationContext class with XML-file name. This file should be located in file system.
 10. Done.
 11. Person interface is implemented by UsualPerson class, object of that has Country class object, that has A class object.
 12. Done.
