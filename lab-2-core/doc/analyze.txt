@@ -4,3 +4,18 @@
 4. Done.
 5. Done.
 6. Done.
+7. Use reference to appropriate bean.
+8. Advantage is that reference is explicit. Disadvantage is that this way is not flexible.
+9. Advantage is that appropriate bean will be found automatically. Disadvantage is that there would be cases when bean couldn't be found due to incorrect name or many beans with such type.
+10. Done.
+11. Ok.
+12. File should be located in classpath
+13. Done.
+14. Done.
+15. Done.
+16. Done.
+17. Done.
+18. Ok.
+19. SimpleAppTest creates context itself. For SpringTCFAppTest context is deployed above it. SpringTCFAppTest is like a bean.
+20. To org.junit.runner.
+21. @ContextConfiguration supports Component classes as well

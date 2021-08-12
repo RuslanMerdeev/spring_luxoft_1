@@ -30,7 +30,7 @@ public class SimpleAppTest {
 	public void testInitPerson() {
 		UsualPerson person = (UsualPerson) context.getBean("person");
 //		FYI: Another way to achieve the bean
-//		person = context.getBean(UsualPerson.class);
+//		UsualPerson person = context.getBean(UsualPerson.class);
 		assertEquals(expectedPerson, person);
 		System.out.println(person);
 	}
