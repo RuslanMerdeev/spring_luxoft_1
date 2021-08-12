@@ -1,0 +1,6 @@
+1. Done.
+2. Done.
+3. For bean "person" need to define "height", "isProgrammer" and "contacts" fields.
+4. Done.
+5. Done.
+6. Done.

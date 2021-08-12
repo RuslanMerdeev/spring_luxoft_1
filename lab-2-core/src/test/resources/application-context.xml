@@ -9,6 +9,14 @@
         <property name="name" value="Ivan Ivanov"/>
         <property name="age" value="35"/>
         <property name="country" ref="country"/>
+        <property name="height" value="1.78"/>
+        <property name="isProgrammer" value="true"/>
+        <property name="contacts">
+            <list>
+                <value>asd@asd.ru</value>
+                <value>+7-234-456-67-89</value>
+            </list>
+        </property>
     </bean>
 
     <bean id="country" class="com.luxoft.springioc.lab2.model.Country">
