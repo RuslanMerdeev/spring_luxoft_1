@@ -6,9 +6,9 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd" >
 
     <bean id="person" class="com.luxoft.springioc.lab1.model.UsualPerson">
-        <property name="name" value="John Smith"/>
-        <property name="age" value="35"/>
-        <property name="country" ref="country"/>
+        <constructor-arg name="name" value="John Smith"/>
+        <constructor-arg name="age" value="35"/>
+        <constructor-arg name="country" ref="country"/>
     </bean>
 
     <bean id="country" class="com.luxoft.springioc.lab1.model.Country" autowire="byName">
