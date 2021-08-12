@@ -41,7 +41,9 @@ public class HelloWorldTest {
 
 		System.out.println("-->" + country.getA());
 
-		return new UsualPerson("John Smith", country, 35);
+		UsualPerson person = new UsualPerson("John Smith", 35);
+		person.setCountry(country);
+		return person;
 	}
 
 	@After
