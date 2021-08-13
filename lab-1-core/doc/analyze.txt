@@ -1,0 +1,22 @@
+1. Done.
+2. Done.
+3. XML contains of 4 beans and define p-schema, but don't use it.
+4.
+    4.1. Bean "person" is based on object of UsualPerson class with "name", "age" and "country" fields defined by setters. Other fields remains null.
+    4.2. Bean "country" is based on object of Country class with "id", "name" and "codeName" fields defined by setters. Field "a" was injected by setter by name.
+    4.3. Bean "a" is based on object of A class.
+    4.4. Bean "country1" is based on object of Country class with "id", "name" and "codeName" fields defined by setters. Other fields remains null.
+5. Bean "person" fields defined by setters. Bean is based on object of subclass of Person class.
+6. Bean "country" is injected to bean "person".
+7. Bean "person" and object "person" are equaled excepting of definition of "a" field of "country" field. Bean "country", injected by reference to bean "person", injects it by name.
+8. Done.
+9. Context retrieved by instantiating of FileSystemXmlApplicationContext class with XML-file name. This file should be located in file system.
+10. Done.
+11. Person interface is implemented by UsualPerson class, object of that has Country class object, that has A class object.
+12. Done.
+13. Done.
+14. Done.
+15. Done.
+16. Done.
+17. Done.
+18. Done.
