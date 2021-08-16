@@ -1,0 +1,6 @@
+1. Done.
+2. Done.
+3. This annotation means that there will be applied the following xml-configuration to configure context.
+4. This annotation means that these classes are service-components from now and will be controlled by the context.
+5. Done.
+6. Done.

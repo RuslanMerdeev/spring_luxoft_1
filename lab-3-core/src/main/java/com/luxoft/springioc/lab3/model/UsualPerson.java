@@ -4,30 +4,36 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+//import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
+//import javax.annotation.PostConstruct;
+//import javax.annotation.PreDestroy;
 
-//@Component("person")
+@Service("person")
 public class UsualPerson implements Person {
 	
 	public static int createdPersons = 0; 
 
-//    @Value("${person.id}")
+    @Value("${person.id}")
     private int id;
 
+    @Value("${person.name}")
     private String name;
 
     @Autowired
     private Country country;
 
+    @Value("${person.age}")
     private int age;
 
+    @Value("${person.height}")
     private float height;
 
+    @Value("${person.isProgrammer}")
     private boolean isProgrammer;
 
+    @Value("${person.isRegistered}")
     private boolean isRegistered;
 
 	private List<String> contacts;
