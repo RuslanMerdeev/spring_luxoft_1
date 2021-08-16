@@ -4,3 +4,7 @@
 4. This annotation means that these classes are service-components from now and will be controlled by the context.
 5. Done.
 6. Done.
+7. Done.
+8. Done.
+9. Done.
+10. Done.
