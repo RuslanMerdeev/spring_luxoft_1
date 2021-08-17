@@ -10,8 +10,10 @@
 		http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 	<app:aspectj-autoproxy />
+	<aop:aspectj-autoproxy/>
 
 	<bean id="loggingAspect" class="com.luxoft.springaop.lab5.aspects.LoggingAspect" />
+	<bean id="validationAspect" class="com.luxoft.springaop.lab5.aspects.ValidationAspect" />
 
 	<bean id="person" class="com.luxoft.springaop.lab5.model.UsualPerson">
 		<property name="name" value="John Smith" />
