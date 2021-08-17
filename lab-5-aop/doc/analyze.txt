@@ -1,0 +1,17 @@
+Part 5
+1. Done.
+2. Done.
+3. Done.
+4. LoggingAspect is used to around invoking of setter methods with logging.
+Part 6
+1. Done.
+2. Done.
+3. Done.
+4. Done.
+5. Done.
+Part 7
+1. Done.
+2. Done.
+3. Done.
+4. Done.
+5. Done. testValidation() was run instead
