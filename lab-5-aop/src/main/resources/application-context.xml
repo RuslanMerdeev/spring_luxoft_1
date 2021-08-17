@@ -13,6 +13,7 @@
 	<aop:aspectj-autoproxy/>
 
 	<bean id="loggingAspect" class="com.luxoft.springaop.lab5.aspects.LoggingAspect" />
+	<bean id="validationLoggingAspect" class="com.luxoft.springaop.lab5.aspects.ValidationLoggingAspect" />
 	<bean id="validationAspect" class="com.luxoft.springaop.lab5.aspects.ValidationAspect" />
 
 	<bean id="person" class="com.luxoft.springaop.lab5.model.UsualPerson">
