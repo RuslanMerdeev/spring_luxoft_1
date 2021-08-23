@@ -5,5 +5,71 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 				http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
-				
+
+	<context:property-placeholder location="classpath:locations.properties"/>
+<!--	<context:annotation-config></context:annotation-config>-->
+
+
+	<bean id="russia" class="com.luxoft.springcore.objects.Country">
+		<constructor-arg name="id" value="1"/>
+		<constructor-arg name="name" value="${russia.name}"/>
+		<constructor-arg name="codeName" value="${russia.codeName}"/>
+	</bean>
+	<bean id="bulgaria" class="com.luxoft.springcore.objects.Country">
+		<constructor-arg name="id" value="2"/>
+		<constructor-arg name="name" value="${bulgaria.name}"/>
+		<constructor-arg name="codeName" value="${bulgaria.codeName}"/>
+	</bean>
+	<bean id="poland" class="com.luxoft.springcore.objects.Country">
+		<constructor-arg name="id" value="3"/>
+		<constructor-arg name="name" value="${poland.name}"/>
+		<constructor-arg name="codeName" value="${poland.codeName}"/>
+	</bean>
+	<bean id="austria" class="com.luxoft.springcore.objects.Country">
+		<constructor-arg name="id" value="1"/>
+		<constructor-arg name="name" value="${austria.name}"/>
+		<constructor-arg name="codeName" value="${austria.codeName}"/>
+	</bean>
+
+	<bean id="moscow" class="com.luxoft.springcore.objects.City">
+		<constructor-arg name="id" value="1"/>
+		<constructor-arg name="name" value="${moscow.name}"/>
+		<constructor-arg name="country" value="#{russia}"/>
+	</bean>
+	<bean id="warsaw" class="com.luxoft.springcore.objects.City">
+		<constructor-arg name="id" value="2"/>
+		<constructor-arg name="name" value="${warsaw.name}"/>
+		<constructor-arg name="country" value="#{poland}"/>
+	</bean>
+	<bean id="krakow" class="com.luxoft.springcore.objects.City">
+		<constructor-arg name="id" value="3"/>
+		<constructor-arg name="name" value="${krakow.name}"/>
+		<constructor-arg name="country" value="#{poland}"/>
+	</bean>
+	<bean id="sofia" class="com.luxoft.springcore.objects.City">
+		<constructor-arg name="id" value="4"/>
+		<constructor-arg name="name" value="${sofia.name}"/>
+		<constructor-arg name="country" value="#{bulgaria}"/>
+	</bean>
+	<bean id="vienna" class="com.luxoft.springcore.objects.City">
+		<constructor-arg name="id" value="5"/>
+		<constructor-arg name="name" value="${vienna.name}"/>
+		<constructor-arg name="country" value="#{austria}"/>
+	</bean>
+
+	<bean id="russianPerson" class="com.luxoft.springcore.objects.UsualPerson">
+		<constructor-arg name="name" value="Viktor Ponedelnik"/>
+		<constructor-arg name="age" value="35"/>
+		<constructor-arg name="city" value="#{moscow}"/>
+	</bean>
+	<bean id="bulgarianPerson" class="com.luxoft.springcore.objects.UsualPerson">
+		<constructor-arg name="name" value="Emil Kostadinov"/>
+		<constructor-arg name="age" value="37"/>
+		<constructor-arg name="city" value="#{sofia}"/>
+	</bean>
+
+	<bean id="operatorsBean" class="com.luxoft.springcore.objects.Operators">
+		<property name="ageComparisonTest" value="true"/>
+	</bean>
+
 </beans>
