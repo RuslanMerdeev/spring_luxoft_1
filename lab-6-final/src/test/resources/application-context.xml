@@ -7,7 +7,7 @@
 				http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 	<context:property-placeholder location="classpath:locations.properties"/>
-<!--	<context:annotation-config></context:annotation-config>-->
+	<context:component-scan base-package="com.luxoft.springcore"/>
 
 
 	<bean id="russia" class="com.luxoft.springcore.objects.Country">
@@ -70,6 +70,33 @@
 
 	<bean id="operatorsBean" class="com.luxoft.springcore.objects.Operators">
 		<property name="ageComparisonTest" value="true"/>
+		<property name="distanceComparisonTest" value="true"/>
 	</bean>
 
+	<bean id="travellingOpportunities" class="com.luxoft.springcore.travel.TravellingOpportunities">
+		<property name="connections">
+			<list>
+				<bean id="fromMoscowToWarsaw" class="com.luxoft.springcore.travel.Connection">
+					<constructor-arg name="source" value="#{moscow}"/>
+					<constructor-arg name="destination" value="#{warsaw}"/>
+					<constructor-arg name="distance" value="1130"/>
+				</bean>
+				<bean id="fromWarsawToKrakow" class="com.luxoft.springcore.travel.Connection">
+					<constructor-arg name="source" value="#{warsaw}"/>
+					<constructor-arg name="destination" value="#{krakow}"/>
+					<constructor-arg name="distance" value="256"/>
+				</bean>
+				<bean id="fromSofiaToVienna" class="com.luxoft.springcore.travel.Connection">
+					<constructor-arg name="source" value="#{sofia}"/>
+					<constructor-arg name="destination" value="#{vienna}"/>
+					<constructor-arg name="distance" value="835"/>
+				</bean>
+				<bean id="fromViennaToKrakow" class="com.luxoft.springcore.travel.Connection">
+					<constructor-arg name="source" value="#{vienna}"/>
+					<constructor-arg name="destination" value="#{krakow}"/>
+					<constructor-arg name="distance" value="331"/>
+				</bean>
+			</list>
+		</property>
+	</bean>
 </beans>

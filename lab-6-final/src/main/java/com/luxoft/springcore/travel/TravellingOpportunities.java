@@ -7,11 +7,11 @@ public class TravellingOpportunities {
 	
 	private List<Connection> connections;
 
-	public List<Connection> getConnectionsList() {
+	public List<Connection> getConnections() {
 		return Collections.unmodifiableList(connections);
 	}
 
-	public void setConnectionsList(List<Connection> connections) {
+	public void setConnections(List<Connection> connections) {
 		this.connections = connections;
 	}
 
